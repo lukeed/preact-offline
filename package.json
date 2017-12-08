@@ -1,0 +1,36 @@
+{
+  "version": "0.0.0",
+  "name": "preact-offline",
+  "umd:name": "preactOffline",
+  "repository": "lukeed/preact-offline",
+  "description": "offline component for Preact",
+  "umd:main": "dist/preact-offline.min.js",
+  "module": "dist/preact-offline.es.js",
+  "main": "dist/preact-offline.js",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "author": {
+    "name": "Luke Edwards",
+    "email": "luke.edwards05@gmail.com",
+    "url": "https://lukeed.com"
+  },
+  "scripts": {
+    "build": "node build",
+    "pretest": "npm run build"
+  },
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "gzip-size": "^4.1.0",
+    "pretty-bytes": "^4.0.2",
+    "rollup": "^0.52.1",
+    "rollup-plugin-buble": "^0.18.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "uglify-js": "^3.2.1"
+  },
+  "peerDependencies": {
+    "preact": "^8.1.0"
+  }
+}
