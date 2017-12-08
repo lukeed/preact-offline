@@ -3,7 +3,7 @@
   "name": "preact-offline",
   "umd:name": "preactOffline",
   "repository": "lukeed/preact-offline",
-  "description": "offline component for Preact",
+  "description": "A (300b gzip) component to render alerts/messages when offline.",
   "umd:main": "dist/preact-offline.min.js",
   "module": "dist/preact-offline.es.js",
   "main": "dist/preact-offline.js",
@@ -20,7 +20,12 @@
     "build": "node build",
     "pretest": "npm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "preact",
+    "component",
+    "offline",
+    "status"
+  ],
   "dependencies": {
     "is-offline": "^2.1.0"
   },

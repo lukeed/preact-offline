@@ -1,53 +1,37 @@
-# preact-foobar [![NPM](https://img.shields.io/npm/v/preact-foobar.svg)](https://www.npmjs.com/package/preact-foobar)
+# preact-offline [![NPM](https://img.shields.io/npm/v/preact-offline.svg)](https://www.npmjs.com/package/preact-offline)
 
-> A (123b gzip) foobar component for Preact
+> A (300b gzip) component to render alerts/messages when offline.
+
+Check out the [live demo](https://jsfiddle.net/lukeed/8at2tg1e/)!
 
 This module exposes three module definitions:
 
-* **ES Module**: `dist/preact-foobar.es.js`
-* **CommonJS**: `dist/preact-foobar.js`
-* **UMD**: `dist/preact-foobar.min.js`
+* **ES Module**: `dist/preact-offline.es.js`
+* **CommonJS**: `dist/preact-offline.js`
+* **UMD**: `dist/preact-offline.min.js`
 
-If using the UMD bundle, the library is exposed as `preactFoobar` globally.
+If using the UMD bundle, the library is exposed as `preactOffline` globally.
 
 ## Install
 
 ```
-$ npm install --save preact-scroll-header
+$ npm install --save preact-offline
 ```
 
 ## Usage
 
 ```js
 import { h } from 'preact';
-import Foobar from 'preact-foobar';
+import Offline from 'preact-offline';
 
-<Foobar>
-  <h1>Hello</h1>
-</Foobar>
+<Offline />
+//=> <div>No connection</div>
+
+<Offline id="foo" class="bar">
+  <p>Custom Text</p>
+</Offline>
+//=> <div id="foo" class="bar"><p>Custom Text</p></div>
 ```
-
-
-## Properties
-
-#### id
-Type: `String`<br>
-Default: `none`
-
-The `id` attribute to pass down.
-
-#### className
-Type: `String`<br>
-Default: `none`
-
-The `className` attribute to pass down. Added to the wrapper element.
-
-#### foobar
-Type: `Number`<br>
-Default: `0`
-
-Foobar
-
 
 ## License
 
