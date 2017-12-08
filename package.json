@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0",
+  "version": "1.0.0",
   "name": "preact-offline",
   "umd:name": "preactOffline",
   "repository": "lukeed/preact-offline",
